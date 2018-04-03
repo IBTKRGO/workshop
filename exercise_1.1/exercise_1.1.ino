@@ -59,7 +59,7 @@ void loop()
   
   int sensorvalue = analogRead(A0);
   Serial.println(sensorvalue);
-  Blynk.virtualWrite(V1,sensorvalue);
+
   if(sensorvalue <150){
     digitalWrite(output_pin, HIGH);
     }else{
